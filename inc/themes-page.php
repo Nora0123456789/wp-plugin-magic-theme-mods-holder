@@ -36,21 +36,6 @@ class WPTMHThemesPage {
     /**
      * Views
      */
-        function renderFormRegisterThemeMods()
-        {
-            require_once( 'views/admin-page/form-register-current-theme-mods.php' );
-        }
-
-        function renderFormTable()
-        {
-            require_once( 'views/admin-page/form-theme-mods-table.php' );
-        }
-
-        function renderFormTableRow()
-        {
-            require_once( 'views/admin-page/form-theme-mods-table-row.php' );
-        }
-
         function renderPage()
         {
             require_once( 'views/admin-page.php' );
