@@ -81,7 +81,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function sanitizeUniquePrefix( string $prefix, $sep = '_' )
+		public function sanitizeUniquePrefix( $prefix, $sep = '_' )
 		{
 			return strtolower( preg_replace( '/[^a-zA-Z0-9]+/i', $sep, $prefix ) );
 		}
@@ -92,7 +92,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function sanitizeInputNamePrefix( string $prefix, string $sep = '_' )
+		public function sanitizeInputNamePrefix( $prefix, $sep = '_' )
 		{
 
 			return strtolower( preg_replace( '/[^a-zA-Z0-9\[\]]+/i', $sep, $prefix ) );
@@ -125,7 +125,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedName( string $name, string $sep = '_' )
+		public function getPrefixedName( $name, $sep = '_' )
 		{
 
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
@@ -141,7 +141,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getThemePrefixedName( string $name, string $sep = '_' )
+		public function getThemePrefixedName( $name, $sep = '_' )
 		{
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -156,7 +156,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedOptionName( string $name, string $sep = '_' )
+		public function getPrefixedOptionName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -170,7 +170,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedThemeOptionName( string $name, string $sep = '_' )
+		public function getPrefixedThemeOptionName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -185,7 +185,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedPostMetaName( string $name, string $sep = '_' )
+		public function getPrefixedPostMetaName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( '_' . implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -199,7 +199,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedThemePostMetaName( string $name, string $sep = '_' )
+		public function getPrefixedThemePostMetaName( $name, $sep = '_' )
 		{
 			return $this->sanitizeInputNamePrefix( '_' . implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -214,7 +214,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedActionHook( string $name, string $sep = '_' )
+		public function getPrefixedActionHook( $name, $sep = '_' )
 		{
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
@@ -229,7 +229,7 @@ final class MagicThemeModsHolder {
 		 * @param  [string] $sep
 		 * @return [string]
 		**/
-		public function getPrefixedFilterHook( string $name, string $sep = '_' )
+		public function getPrefixedFilterHook( $name, $sep = '_' )
 		{
 			return $this->sanitizeUniquePrefix( implode( $sep, array(
 				self::UNIQUE_KEY,
