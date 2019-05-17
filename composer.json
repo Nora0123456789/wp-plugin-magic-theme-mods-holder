@@ -1,0 +1,13 @@
+{
+    "name": "nora/wp-theme-mods-holder",
+    "authors": [
+        {
+            "name": "NoraNora",
+            "email": "noranora@wp-works.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpcompatibility/phpcompatibility-wp": "*"
+    }
+}
