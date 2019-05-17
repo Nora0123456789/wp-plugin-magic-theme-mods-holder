@@ -4,7 +4,7 @@
 
 	<!-- What to scan -->
 	<file>.</file>
-z	<exclude-pattern>/vendor/</exclude-pattern>
+	<exclude-pattern>/vendor/</exclude-pattern>
 	<exclude-pattern>/node_modules/</exclude-pattern>
 
 	<!-- How to scan -->
@@ -20,7 +20,6 @@ z	<exclude-pattern>/vendor/</exclude-pattern>
 	<!-- https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
 	<config name="testVersion" value="5.3-"/>
 	<!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
-	<config name="testVersion" value="5.2-"/>
 	<rule ref="PHPCompatibilityWP">
 		<include-pattern>*\.php$</include-pattern>
 	</rule>
