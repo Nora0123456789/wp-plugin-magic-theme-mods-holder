@@ -3,9 +3,9 @@ Contributors: nora0123456789
 Donate link: https://wp-works.com
 Tags: Theme Mods
 Requires at least: 4.6
-Tested up to: 4.9.8
+Tested up to: 5.2
 Stable tag: 4.4
-Requires PHP: 7.1
+Requires PHP: 5.6.20
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
