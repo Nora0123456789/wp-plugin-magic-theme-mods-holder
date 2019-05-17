@@ -1,1 +1,1 @@
-# wp-theme-mods-holder
+# magic-theme-mods-holder
