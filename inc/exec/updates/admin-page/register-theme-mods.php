@@ -1,4 +1,7 @@
 <?php
+if ( ! isset( $_POST[ mtmh()->getPrefixedOptionName( 'register_theme_mods_nonce' ) ] ) ) {
+    return;
+}
 
 check_admin_referer( mtmh()->getPrefixedOptionName( 'register_theme_mods' ), mtmh()->getPrefixedOptionName( 'register_theme_mods_nonce' ) );
 

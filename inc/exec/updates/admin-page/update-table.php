@@ -1,4 +1,7 @@
 <?php
+if ( ! isset( $_POST[ mtmh()->getPrefixedOptionName( 'update_theme_mods_list_nonce' ) ] ) ) {
+    return;
+}
 
 // Nonce
 check_admin_referer( mtmh()->getPrefixedOptionName( 'update_theme_mods_list' ), mtmh()->getPrefixedOptionName( 'update_theme_mods_list_nonce' ) );

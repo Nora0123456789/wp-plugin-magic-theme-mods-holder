@@ -48,6 +48,9 @@ class WPTMHThemesPage {
         {
             if ( isset( $_POST['current-theme-mods'] ) ) require_once( 'exec/updates/admin-page/register-theme-mods.php' );
             elseif ( isset( $_POST['update-theme-mods-list'] ) ) require_once( 'exec/updates/admin-page/update-table.php' );
+            elseif ( isset( $_POST['set-current-theme-mods'] ) ) require_once( 'exec/updates/admin-page/set-current-theme-mods.php' );
+            elseif ( isset( $_POST['remove-current-theme-mods'] ) ) require_once( 'exec/updates/admin-page/remove-current-theme-mods.php' );
+            elseif ( isset( $_POST['filter-theme-mods'] ) ) require_once( 'exec/updates/admin-page/filter-theme-mods.php' );
         }
 
         function updateTable()
